@@ -17,7 +17,7 @@ SELECT artist AS 'Artist',
        name AS 'Album',
        DATE_FORMAT(release_date, '%M %e, %Y') AS 'Release Date'
 FROM albums
-WHERE release_date >= '1989-01-01' and release_date <= '1999-12-31'
+WHERE release_date BETWEEN '1990-01-01' and '1999-12-31'
 ORDER BY release_date ASC;
 SELECT '';
 
