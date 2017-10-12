@@ -14,17 +14,17 @@ FROM employees
 WHERE first_name = 'Irena' OR first_name = 'Vidya' OR first_name = 'Maya'
 ORDER BY first_name;
 
-SELECT 'Find employees with first names "Irena", "Vidya", or "Maya" ordered by last name and then first name' AS '';
-SELECT first_name, last_name
-FROM employees
-WHERE first_name = 'Irena' OR first_name = 'Vidya' OR first_name = 'Maya'
-ORDER BY last_name, first_name;
-
 SELECT 'Find employees with first names "Irena", "Vidya", or "Maya" ordered by first name and then last name' AS '';
 SELECT first_name, last_name
 FROM employees
 WHERE first_name = 'Irena' OR first_name = 'Vidya' OR first_name = 'Maya'
 ORDER BY first_name, last_name;
+
+SELECT 'Find employees with first names "Irena", "Vidya", or "Maya" ordered by last name and then first name' AS '';
+SELECT first_name, last_name
+FROM employees
+WHERE first_name = 'Irena' OR first_name = 'Vidya' OR first_name = 'Maya'
+ORDER BY last_name, first_name;
 
 SELECT 'Find MALE employees with first names "Irena", "Vidya", or "Maya"' AS '';
 SELECT *
