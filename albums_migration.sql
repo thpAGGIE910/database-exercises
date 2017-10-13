@@ -9,5 +9,6 @@ CREATE TABLE albums (
   release_date DATE,
   sales        DOUBLE UNSIGNED       DEFAULT 0,
   genre        TEXT,
-  PRIMARY KEY (id)
+  PRIMARY KEY (id),
+  UNIQUE (artist, name)
 );
